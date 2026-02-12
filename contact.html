@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Contact</title>
+      <title>Saurav|Contact</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -74,13 +74,15 @@
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-md-12">
-                     <div class="mail_section_1">
-                        <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
-                        <input type="text" class="mail_text" placeholder="Your Email" name="Your Email">
-                        <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone">
-                        <textarea class="massage-bt" placeholder="Your Massage" rows="5" id="comment" name="Your Massage"></textarea>
-                        <div class="send_bt"><a href="#">Send Now</a></div>
-                     </div>
+                     <form class="mail_section_1" id="contactForm" method="POST" action="https://formspree.io/f/xayzwzpb">
+                        <input type="text" class="mail_text" placeholder="Your Name" name="name" required>
+                        <input type="email" class="mail_text" placeholder="Your Email" name="email" required>
+                        <input type="text" class="mail_text" placeholder="Your Phone" name="phone" required>
+                        <textarea class="massage-bt" placeholder="Your Massage" rows="5" id="comment" name="message" required></textarea>
+                        <div class="send_bt">
+                           <button type="submit" style="width: 100%; font-size: 16px; color: #fefefd; background-color: #fa7e23; padding: 14px; margin-top: 40px; display: block; font-weight: bold; border-radius: 5px; border: none; cursor: pointer; transition: all 0.3s ease;">Send Now</button>
+                        </div>
+                     </form>
                   </div>
                </div>
             </div>
@@ -96,10 +98,10 @@
                      <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                     <a href="https://wa.me/+9779809745284" target="_blank" title="Chat on WhatsApp"><i class="fa fa-phone" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                     <a href="mailto:purisaurav662@gmail.com" title="Send Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                   </li>
                </ul>
             </div>
