@@ -76,7 +76,7 @@
                   <div class="row">
                      <div class="col-md-8">
                         <div class="container_main">
-                           <img src="images/img-1.png" alt="" class="image">
+                           <img src="images/img-1.png" alt="Project image 1" class="image img-fluid">
                            <div class="overlay">
                               <div class="text">
                                  <div class="btn_main">
@@ -88,7 +88,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="images/img-2.png" alt="" class="image">
+                           <img src="images/img-2.png" alt="Project image 2" class="image img-fluid">
                            <div class="overlay">
                               <div class="text">
                                  <div class="btn_main">
@@ -104,7 +104,7 @@
                   <div class="row">
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="images/img-3.png" alt="" class="image">
+                           <img src="images/img-3.png" alt="Project image 3" class="image img-fluid">
                            <div class="overlay">
                               <div class="text">
                                  <div class="btn_main">
@@ -116,7 +116,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="images/img-4.png" alt="" class="image">
+                           <img src="images/img-4.png" alt="Project image 4" class="image img-fluid">
                            <div class="overlay">
                               <div class="text">
                                  <div class="btn_main">
@@ -128,7 +128,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="images/img-5.png" alt="" class="image">
+                           <img src="images/img-5.png" alt="Project image 5" class="image img-fluid">
                            <div class="overlay">
                               <div class="text">
                                  <div class="btn_main">
@@ -141,12 +141,64 @@
                   </div>
                </div>
             </div>
-            <div class="seemore_bt"><a href="#">See More</a></div>
+            <div class="extra-projects d-none mt-4">
+               <div class="row">
+                  <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                     <div class="container_main">
+                        <img data-src="https://picsum.photos/id/1015/800/600" src="" alt="Project 6" class="image img-fluid lazy">
+                        <div class="overlay">
+                           <div class="text">
+                              <div class="btn_main">
+                                 <div class="buy_bt"><a href="#">View More</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                     <div class="container_main">
+                        <img data-src="https://picsum.photos/id/1016/800/600" src="" alt="Project 7" class="image img-fluid lazy">
+                        <div class="overlay">
+                           <div class="text">
+                              <div class="btn_main">
+                                 <div class="buy_bt"><a href="#">View More</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                     <div class="container_main">
+                        <img data-src="https://picsum.photos/id/1025/800/600" src="" alt="Project 8" class="image img-fluid lazy">
+                        <div class="overlay">
+                           <div class="text">
+                              <div class="btn_main">
+                                 <div class="buy_bt"><a href="#">View More</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                     <div class="container_main">
+                        <img data-src="https://picsum.photos/id/1035/800/600" src="" alt="Project 9" class="image img-fluid lazy">
+                        <div class="overlay">
+                           <div class="text">
+                              <div class="btn_main">
+                                 <div class="buy_bt"><a href="#">View More</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="seemore_bt"><a href="#" id="toggleViewMore" role="button" aria-expanded="false">View More</a></div>
          </div>
       </div>
       <!-- portfolio section end -->
       <!-- footer section start -->
-      <div class="footer_section">
+       <div class="footer_section">
          <div class="container">
             <div class="location_text">
                <ul>
@@ -154,10 +206,10 @@
                      <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                     <a href="https://wa.me/+9779809745284" target="_blank" title="Chat on WhatsApp"><i class="fa fa-phone" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                     <a href="mailto:purisaurav662@gmail.com" title="Send Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                   </li>
                </ul>
             </div>
@@ -167,7 +219,7 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
+            <p class="copyright_text">2026 All Rights Reserved. Design by <a href="#index.html">Saurav Puri</a></p>
          </div>
       </div>
       <!-- copyright section end -->
@@ -204,6 +256,35 @@
                 $(this).off("touchmove");
             });
          });
+      </script>
+      <script>
+         // Toggle and lazy-load extra projects
+         (function($){
+            $(document).ready(function(){
+               $('#toggleViewMore').on('click', function(e){
+                  e.preventDefault();
+                  var $btn = $(this);
+                  var $extra = $('.extra-projects');
+                  if($extra.hasClass('d-none')){
+                     // lazy-load images
+                     $extra.find('img.lazy').each(function(){
+                        var $img = $(this);
+                        var src = $img.attr('data-src');
+                        if(src && !$img.attr('src')){
+                           $img.attr('src', src);
+                        }
+                     });
+                     $extra.removeClass('d-none').hide().slideDown(300);
+                     $btn.text('Show Less').attr('aria-expanded','true');
+                  } else {
+                     $extra.slideUp(300, function(){
+                        $extra.addClass('d-none');
+                     });
+                     $btn.text('View More').attr('aria-expanded','false');
+                  }
+               });
+            });
+         })(jQuery);
       </script>
    </body>
 </html>
